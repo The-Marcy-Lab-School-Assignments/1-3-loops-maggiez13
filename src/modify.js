@@ -4,7 +4,7 @@ const whileToFor = () => {
   }
 };
 
-whileToFor()
+// whileToFor()
 
 
 // const whileToFor = () => {
@@ -19,7 +19,7 @@ whileToFor()
 
 const continueGuardClause = () => {
   for (let i = 1; i < 5; i++) {
-    if ((i === 2) && (i === 3)) {
+    if ((i === 2) || (i === 3)) {
       continue;
     }
     // if condition is true, continue will skip rest of code in block and go to next iteration
@@ -27,6 +27,9 @@ const continueGuardClause = () => {
     console.log(i);
   }
 };
+
+continueGuardClause();
+
 
 // const continueGuardClause = () => {
 //   for (let i = 1; i < 5; i++) {
